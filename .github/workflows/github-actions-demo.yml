@@ -1,7 +1,10 @@
+name: Nomad GHA Demo
+
 on:
   push:
     branches:
       - main
+      - master
 
 env:
   PRODUCT_VERSION: "1.6.3"
