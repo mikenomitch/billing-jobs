@@ -8,7 +8,7 @@ on:
 
 env:
   PRODUCT_VERSION: "1.6.3"
-  NOMAD_ADDR: "http://4b7d-50-46-255-119.ngrok-free.app"
+  NOMAD_ADDR: "http://0f80-50-46-255-119.ngrok-free.app"
 
 jobs:
   Nomad-JWT-Auth:
