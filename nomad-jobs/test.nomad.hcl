@@ -1,5 +1,6 @@
 job "test" {
-  type        = "service"
+  namespace = "financial"
+  type = "service"
 
   group "test-group" {
     count = 1
