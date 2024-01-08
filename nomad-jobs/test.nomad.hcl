@@ -3,7 +3,7 @@ job "test" {
   type = "service"
 
   group "test-group" {
-    count = 1
+    count = 2
 
     task "test-task" {
       driver = "docker"
