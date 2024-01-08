@@ -34,4 +34,4 @@ jobs:
           caCertificate: ${{ secrets.NOMAD_CA_CERT }}
         continue-on-error: true
       - name: Deploy Jobs
-        run: NOMAD_ADDR="${{ env.NOMAD_ADDR }}" NOMAD_TOKEN="${{ steps.nomad-jwt-auth.outputs.nomadToken }}" for file in ./nomad-jobs/*; do nomad run -detach "$file"; done
+        run: for file in ./nomad-jobs/*; do NOMAD_ADDR="${{ env.NOMAD_ADDR }}" NOMAD_TOKEN="${{ steps.nomad-jwt-auth.outputs.nomadToken }}" nomad run -detach "$file"; done
